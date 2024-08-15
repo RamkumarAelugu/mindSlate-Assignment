@@ -1,38 +1,85 @@
-.App {
+.container {
+  background-image: url("https://res.cloudinary.com/dn5tjlndx/image/upload/v1723712355/lxdkpn2vde2wi8is0rxm.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-form h2 {
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-button {
+  margin-top: 15px;
+  width: 90%;
+  padding: 0.7rem;
+  background-color: blue;
   color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: center;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.login-button:hover {
+  background-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+}
+.image {
+  width: 300px;
+  border-radius: 8px;
+}
+.heading {
+  font-style: italic;
+  font-size: 22px;
+}
+.Email {
+  font-weight: 500;
+
+}
+.input {
+  height: 15px;
+  width: 80%;
 }
